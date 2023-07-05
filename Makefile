@@ -18,6 +18,9 @@ trash-keep: .dapper
 
 deps: trash
 
+image:
+	docker build -f package/Dockerfile -t cr.loongnix.cn/rancher/klipper-lb:v0.1.2 .
+
 .DEFAULT_GOAL := ci
 
 .PHONY: $(TARGETS)
